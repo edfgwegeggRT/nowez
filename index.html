@@ -1,13 +1,28 @@
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iframe ez</title>
+    <title>Full-Screen iFrame Example</title>
+    <style>
+        /* Reset body and html to remove margin and make the iframe fullscreen */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent scrollbars from appearing */
+        }
+        /* Style the iframe to take the full viewport size */
+        iframe {
+            width: 100vw; /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            border: none; /* Remove the border */
+            display: block; /* Ensures no inline spacing issues */
+        }
+    </style>
 </head>
 <body>
-    <h1>Iframe :)</h1>
-    <iframe src="https://now.gg/iframe/snippet?app_pkg=com.uncube.launcher3&partner=interstellar" width="600" height="400" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://now.gg/iframe/snippet?app_pkg=com.uncube.launcher3&partner=interstellar" title="Description of the iframe content"></iframe>
 </body>
 </html>
